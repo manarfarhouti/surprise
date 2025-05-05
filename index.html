@@ -4,41 +4,59 @@
   <meta charset="UTF-8" />
   <title></title>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-  <style>
-    body {
-      background-color: black;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      text-align: center;
-      padding: 40px;
-      color: #ffffff;
-    }
+  
+    <style>
+  body {
+    background-color: #ffe6f2;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    padding: 40px;
+    color: #cc0066;
+  }
 
+  h1 {
+    font-size: 48px; /* Default for larger screens */
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 24px; /* Default for larger screens */
+    margin-top: 20px;
+  }
+
+  button {
+    background-color: #ff99cc;
+    border: none;
+    padding: 15px 25px;
+    font-size: 20px; /* Default for larger screens */
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #cc6699;
+    transition: transform 0.2s ease;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+
+  /* Responsive Design for Mobile */
+  @media only screen and (max-width: 600px) {
     h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
+      font-size: 36px; /* Smaller font size for small screens */
     }
 
-    img {
-      width: 200px;
-      margin: 20px 0;
+    p {
+      font-size: 20px; /* Smaller paragraph text for small screens */
     }
 
     button {
-      background-color: #ff99cc;
-      border: none;
-      padding: 15px 25px;
-      font-size: 18px;
-      border-radius: 15px;
-      color: white;
-      cursor: pointer;
-      box-shadow: 2px 2px 10px #cc6699;
-      transition: transform 0.2s ease;
+      font-size: 18px; /* Smaller button text for small screens */
+      padding: 12px 20px;
     }
-
-    button:hover {
-      transform: scale(1.05);
-    }
-  </style>
+  }
+</style>
+  
 </head>
 <body>
   <h1></h1>
