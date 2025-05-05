@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <style>
+    body {
+      background-color: black;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 40px;
+      color: #ffffff;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 200px;
+      margin: 20px 0;
+    }
+
+    button {
+      background-color: #ff99cc;
+      border: none;
+      padding: 15px 25px;
+      font-size: 18px;
+      border-radius: 15px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 2px 2px 10px #cc6699;
+      transition: transform 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1></h1>
+  <img src="https://media1.tenor.com/m/kJCPYyiH9fQAAAAC/hello-kitty-love.gif" alt="Hello Kitty" />
+  <p>Click below for a surprise</p>
+  <button onclick="explodeConfetti()">Open</button>
+
+  <script>
+    function explodeConfetti() {
+      // Confetti burst
+      confetti({
+        particleCount: 150,
+        spread: 100,
+        origin: { y: 0.6 },
+        colors: ['#ff66cc', '#ffccff', '#ffc0cb', '#ffffff'],
+      });
+
+      // Delay then go to message page
+      setTimeout(() => {
+        window.location.href = 'message.html';
+      }, 2000); // 2 second delay
+    }
+  </script>
+</body>
+</html>
+
+
